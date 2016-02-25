@@ -514,6 +514,14 @@ ul#sopt_menu {
     border-right: thin solid #ABABAB;
   }
 
+  a.ui-state-hover {
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+    border: none;
+    background: none;
+  }
+
   // when a box is chosen or hovered over
   li:hover, li.ui-state-highlight {
     background-image: linear-gradient(#49A7DB, #268AC1);
