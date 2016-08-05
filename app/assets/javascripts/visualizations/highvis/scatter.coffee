@@ -37,6 +37,8 @@ $ ->
       constructor: (@canvas) ->
         super(@canvas)
 
+        console.log("currently running in Windows 10~!")
+
         @SYMBOLS_LINES_MODE = 3
         @LINES_MODE = 2
         @SYMBOLS_MODE = 1
