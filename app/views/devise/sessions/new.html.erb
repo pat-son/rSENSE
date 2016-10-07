@@ -8,7 +8,7 @@
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
  <div class="row center-vertical">
-    <div class="col-lg-6 col-lg-offset-1">
+    <div class="col-lg-5">
       <div class="panel panel-default">
         <div class="panel-heading">
           <h3>Log in to iSENSE</h3>
@@ -44,12 +44,22 @@
     <div class="col-lg-1 center-horizontal">
       <h3>or</h3>
     </div>
-    <div class="col-lg-3 center-horizontal">
-      <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--google-sign-in"
+    <div class="col-lg-5">
+      <div class="panel panel-default google-sign-in-box">
+        <div class="panel-heading">
+          <h3>Sign in with Google</h3>
+        </div>
+
+        <div class="panel-body">
+          <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--google-sign-in"
               href='/users/auth/google_oauth2'>
-        <img class="google-logo" src='/assets/btn_google_light_normal_ios.svg'/>
-          Sign in with Google
-      </a>
+            <img class="google-logo" src='/assets/btn_google_light_normal_ios.svg'/>
+              Sign in with Google
+          </a>
+        </div>
+        <div class="panel-footer">
+        </div>
+      </div>
     </div>
   </div>
 <% end %>

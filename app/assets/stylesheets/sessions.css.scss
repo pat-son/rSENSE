@@ -14,3 +14,16 @@
   display: flex;
   justify-content: center;
 }
+
+.google-sign-in-box {
+  .panel-body {
+    height: 217px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .panel-footer {
+    height: 72px;
+  }
+}
