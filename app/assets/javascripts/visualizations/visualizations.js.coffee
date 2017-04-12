@@ -36,6 +36,11 @@ $ ->
 
     globals.curVis = null
 
+    window.onerror = (err) ->
+      if err.includes("TypeError")
+        alert("There was an error when loading the page. You may be able to fix this error by going to the \"Edit Project\" and clicking on the Reset Defaults button.")
+      return false
+
     ###
     CoffeeScript version of runtime.
     ###
